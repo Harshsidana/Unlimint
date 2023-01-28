@@ -2,6 +2,7 @@ package com.example.unlimint
 
 import android.app.Application
 import com.example.unlimint.di.AppModule
+import com.example.unlimint.di.NetworkModule
 import org.koin.android.ext.koin.androidContext
 
 import org.koin.android.ext.koin.androidLogger
@@ -14,7 +15,7 @@ class MyApplication : Application() {
         startKoin {
             androidLogger(org.koin.core.logger.Level.DEBUG)
             androidContext(this@MyApplication)
-            modules(listOf(AppModule))
+            modules(listOf(AppModule,NetworkModule))
         }
     }
 }
