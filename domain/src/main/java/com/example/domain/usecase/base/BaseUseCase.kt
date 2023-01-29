@@ -11,7 +11,7 @@ abstract class BaseUseCase<T> where T : Any {
                 while (true) {
                     val result = run()
                     onResult?.onSuccess(result)
-                    delay(1000)
+                    delay(1000*60)
                 }
             }
             catch (e: Exception) {

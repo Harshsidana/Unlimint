@@ -3,8 +3,8 @@ package com.example.unlimint.di
 
 import com.example.data.remote.ApiService
 import com.example.data.repo.JokesRepoImpl
+import com.example.domain.repository.JokesRepo
 import com.example.domain.usecase.JokesUseCase
-import com.example.domain.usecase.repository.JokesRepo
 import com.example.unlimint.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

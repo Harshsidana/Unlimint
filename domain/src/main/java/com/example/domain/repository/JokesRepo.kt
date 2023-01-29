@@ -1,4 +1,4 @@
-package com.example.domain.usecase.repository
+package com.example.domain.repository
 
 interface JokesRepo {
 

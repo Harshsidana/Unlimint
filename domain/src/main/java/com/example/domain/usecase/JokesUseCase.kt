@@ -1,7 +1,7 @@
 package com.example.domain.usecase
 
 import com.example.domain.usecase.base.BaseUseCase
-import com.example.domain.usecase.repository.JokesRepo
+import com.example.domain.repository.JokesRepo
 
 class JokesUseCase constructor(
     private val jokesRepo: JokesRepo
