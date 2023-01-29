@@ -24,6 +24,7 @@ class JokesViewModel constructor(private val jokesUseCase: JokesUseCase) : ViewM
                 }
 
                 override fun onError(apiError: Exception?) {
+                    getJokes()
                     Log.i("Exception:", "Error occurred" + apiError?.message.toString())
                 }
             },
